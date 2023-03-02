@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int ticketPrice = 6800;
-        int numberOfRublesPerMile = 20;
-        int miles = ticketPrice / numberOfRublesPerMile;
+        BonusMilesService service = new BonusMilesService();
+        long price = 10_000;
+        long miles = service.calculate(price, true);
         System.out.println(miles);
     }
 }
